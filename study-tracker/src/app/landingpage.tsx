@@ -377,10 +377,7 @@ export default function ResponsiveStudyTracker() {
         </button>
 
         <button
-          onClick={() => {
-            setActiveTab('checkin');
-            setCheckedIn(!checkedIn);
-          }}
+          onClick={() => window.location.assign('/scan')}
           className="flex flex-col items-center space-y-1"
         >
           <div className={`w-10 h-1.5 rounded-full ${activeTab === 'checkin' ? 'bg-emerald-300' : 'bg-slate-200'}`} />
